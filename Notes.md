@@ -27,3 +27,15 @@ Peut etre regarder pour essayer de fixer une max de chiffres significatifs, car 
 On peut aussi essayer de contraindre nos constantes en 10^-1 et 10^02.
 
 Sur un terminal (hors notebook), faire q puis entrée permet de terminer la run.
+
+"warmup_maxsize_by" permet de forcer le modèle à se "remettre en question" et ne pas rester bloquer sur une expression complexe qui est en réalité un minimum local.
+
+-----------------------------------------------------------------------------------------------------
+Questions pour séance du 05/03 à venir :
+
+- Il faut absolument mettre un poids pour pénaliser (ou plutôt récompenser) les valeurs "extrème" de vents solaires car sinon l'algo va préférer bien prédire 4900 points qui sont proches de la normale (et donc l'algo va ressortir par exemple une réponse constante) et en louper 100 qui sont les plus interessant que de pédire 4000 bons et 1000 loupés mais avec 100% de bonnes prédictions pour les valeurs de vent solaire.
+MAIS, comment faire un bon poids ? Somme quadratique des distances à la moyenne de chaque variable ? (peut être normaliser aussi)
+
+- Comment afficher en temps réel le fichier .pkl pour le lire avec un second terminal ?
+
+- Peut être définir la frontière entre point "normal" et point de "tempête solaire". Est-ce une valeur seuil de Bz (surement), de Pd, une combinaison des deux ? ou plutôt un certaine date (exemple octobre/novembre 2003) ?
