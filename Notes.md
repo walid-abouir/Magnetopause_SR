@@ -42,4 +42,6 @@ idée : poids inversement proportionnels à r0, mais on peut aussi essayer de fa
 - Peut être définir la frontière entre point "normal" et point de "tempête solaire". Est-ce une valeur seuil de Bz (surement), de Pd, une combinaison des deux ? ou plutôt un certaine date (exemple octobre/novembre 2003) ?
 Tirage qui sur-représente les valeurs faible de r0 (et non réfléchir sur pd et bz).
 
+Param names dans fit : permets de renommer x0 et x1 ou donner un tableau pandas plutôt qu'un array numpy.
+
 Prochaine séance : 11/03 de 16h à 17h.
