@@ -35,7 +35,9 @@ Questions pour séance du 05/03 à venir :
 
 - Il faut absolument mettre un poids pour pénaliser (ou plutôt récompenser) les valeurs "extrème" de vents solaires car sinon l'algo va préférer bien prédire 4900 points qui sont proches de la normale (et donc l'algo va ressortir par exemple une réponse constante) et en louper 100 qui sont les plus interessant que de pédire 4000 bons et 1000 loupés mais avec 100% de bonnes prédictions pour les valeurs de vent solaire.
 MAIS, comment faire un bon poids ? Somme quadratique des distances à la moyenne de chaque variable ? (peut être normaliser aussi)
+idée : poids inversement proportionnels à r0, mais on peut aussi essayer de faire ça et ajouter du poids aux points qui sont dans une zone moins dense, et avec scikitlearn on peut essayer de trouver des estimateurs de densité et utiliser l'inverse de cette valeur pour faire le poids.
 
 - Comment afficher en temps réel le fichier .pkl pour le lire avec un second terminal ?
 
 - Peut être définir la frontière entre point "normal" et point de "tempête solaire". Est-ce une valeur seuil de Bz (surement), de Pd, une combinaison des deux ? ou plutôt un certaine date (exemple octobre/novembre 2003) ?
+Tirage qui sur-représente les valeurs faible de r0 (et non réfléchir sur pd et bz). 
