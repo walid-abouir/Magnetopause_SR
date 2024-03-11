@@ -45,3 +45,11 @@ Tirage qui sur-représente les valeurs faible de r0 (et non réfléchir sur pd e
 Param names dans fit : permets de renommer x0 et x1 ou donner un tableau pandas plutôt qu'un array numpy.
 
 Prochaine séance : 11/03 de 16h à 17h.
+
+------------------------------------------------------------------------------------------------------
+
+Prendre contact avec l'insa pour serveur de calcul, si non on peut envoyer nos codes à l'ONERA.
+
+Avoir fait tourné PySR et avoir trouvé une config qui nous permet de retrouver Shue_98. (méthode facile : donner + * - / et tanh ^)
+
+Prochaine séance : 21/03 14h30.
