@@ -52,4 +52,25 @@ Prendre contact avec l'insa pour serveur de calcul, si non on peut envoyer nos c
 
 Avoir fait tourné PySR et avoir trouvé une config qui nous permet de retrouver Shue_98. (méthode facile : donner + * - / et tanh ^)
 
-Prochaine séance : 21/03 14h30.
+Prochaine séance : 21/03 14h30 :
+
+Regarder nombre de CPU que l'on utilise sur le serveur car on peut spécifier le nb de threads à utiliser
+
+Compter le temps d'exécution avec commande python (et l'afficher par exemple, ou le stocker)
+
+Bruit : que bruiter (entrées, sorties, tout ?) :
+
+Dans la vraie vie, incertitudes sur entrées.
+Dans notre cas, entrée sont des vraies mesures donc sont déjà bruités, et le r0 est calculé à partir de ses données.
+Essayer de bruiter les valeurs calculées r0 avec bruit blanc (trouver amplitude cohérante).
+Et étudier robustesse de l'algo en fonction de l'amplitude du bruit blanc.
+
+Aussi, essayer d'ajouter des opérateurs (exp,cos,abs...) et voir si on converge toujours, en combien de temps ?
+On peut essayer de viser un dixaine d'opérateurs, sans trop contraindre les complexités dans les fonctions, mais contraindre les fonctions imbriquées.
+Sortir le temps total passé sur l'algo en fonction de l'accuracy
+tracer accuracy en fonction du temps passé sur l'algo (par exemple sortir précision toute les minutes, pour avoir un joli tracé).
+librairie timeit sur python
+
+Ajouter paramètre qui sont sensés avoir aucun lien avec la sortie (par exemple ajouter Bx et By dans les entrées).
+
+Prochain RDV lundi 25/03 15h30
